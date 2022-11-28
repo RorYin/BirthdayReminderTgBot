@@ -11,7 +11,7 @@ app = Flask(__name__)
 # app.url_map.strict_slashes=False
 # run_with_ngrok(app)
 
-token = "5002606701:AAFt2QcHWaEgqW0T63dXmTIQYglYX2Dw1bM" #testing
+token = "YOUR-AUTH-TOKEN" #testing
 
 # token = os.environ.get('token')  #production
 bot=logger(token)
