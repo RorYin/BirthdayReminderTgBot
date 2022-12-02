@@ -77,7 +77,7 @@ To know more about bot usage
 
         q = encrypt(chat_id)
         q2 = encrypt(gid)
-        url = f"./newuser?id={q}&gid={q2}"
+        url = f"https://flask-production-eee7.up.railway.app/newuser?id={q}&gid={q2}"
 
         msg = f"""[Click here to open link and register..!]({url})"""
         bot.sendMsgTo(gid,msg,msg_id,"Markdown")
@@ -117,7 +117,7 @@ To know more about bot usage
 
     else:
         bot.sendMsgTo(gid,"Please wait....",msg_id,"Markdown")
-        handletgbotquery(text,chat_id,msg_id,text[1:])
+        # handletgbotquery(text,chat_id,msg_id,text[1:])
         return
 
 
