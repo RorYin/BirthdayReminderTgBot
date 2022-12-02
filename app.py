@@ -108,7 +108,7 @@ To know more about bot usage
     elif(text[:3]=="/id"):
         bot.sendMsgTo(gid,f"gid = {gid} & chatid = {chat_id}",msg_id,"Markdown")
         return
-        # if(chat_id == 887572477):
+        # if(chat_id == devTGid):
         #     bot.sendMsgTo(gid,f"gid = {gid} & chatid = {chat_id}",msg_id,"Markdown")
         #     return
         # else:
