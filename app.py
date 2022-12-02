@@ -77,7 +77,7 @@ To know more about bot usage
 
         q = encrypt(chat_id)
         q2 = encrypt(gid)
-        url = f"https://roryin.pythonanywhere.com/newuser?id={q}&gid={q2}"
+        url = f"./newuser?id={q}&gid={q2}"
 
         msg = f"""[Click here to open link and register..!]({url})"""
         bot.sendMsgTo(gid,msg,msg_id,"Markdown")
