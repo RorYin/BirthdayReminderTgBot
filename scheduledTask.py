@@ -14,7 +14,7 @@ bot=logger(token)
 currentdate = datetime.datetime.now().strftime("%d-%m")
 # print(currentdate)
 
-requrl = f"https://api.airtable.com/v0/appHXjkKNtDVs9aVm/Data/?api_key={airtablekey}"
+requrl = f"https://api.airtable.com/v0/{BaseId}/{TableName}/?api_key={airtablekey}"
 headers = {'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"}
 
 
@@ -59,7 +59,8 @@ def testing():
         # Already added when you pass json= but not when you pass data=
 
     }
-    Response = requests.get("https://api.airtable.com/v0/appHXjkKNtDVs9aVm/tblnRCTgqOA0n6qEB?fields%5B%5D=id",headers=headers).json()
+    Response = requests.get(f"https://api.airtable.com/v0/{BaseId}/{TableId}?fields%5B%5D=id",headers=headers).json()
+    print(Response)
     flag = 0
     for i in Response['records'] :
         # print(i)
@@ -76,7 +77,7 @@ def dodaily():
         # Already added when you pass json= but not when you pass data=
 
     }
-    Response = requests.get("https://api.airtable.com/v0/appHXjkKNtDVs9aVm/tblnRCTgqOA0n6qEB?fields%5B%5D=gid",headers=headers).json()
+    Response = requests.get(f"https://api.airtable.com/v0/{BaseId}/{TableId}?fields%5B%5D=gid",headers=headers).json()
     list = [ ]
     for i in Response['records'] :
         # print(i)
@@ -88,5 +89,5 @@ def dodaily():
     return
 
 if __name__ == '__main__':
-    dodaily()
-    # testing()
+    # dodaily()
+    testing()
