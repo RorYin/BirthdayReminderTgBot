@@ -5,7 +5,7 @@ import json
 from app import *
 from logger import logger
 from scheduledTask import *
-token = "5002606701:AAFt2QcHWaEgqW0T63dXmTIQYglYX2Dw1bM" #testing
+from setup import *
 
 # token = os.environ.get('token')  #production
 bot=logger(token)
@@ -14,7 +14,7 @@ bot=logger(token)
 currentdate = datetime.datetime.now().strftime("%d-%m")
 # print(currentdate)
 
-requrl = "https://api.airtable.com/v0/appHXjkKNtDVs9aVm/Data/?api_key=key6OhVcVppxONYOe"
+requrl = f"https://api.airtable.com/v0/appHXjkKNtDVs9aVm/Data/?api_key={airtablekey}"
 headers = {'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"}
 
 
@@ -55,7 +55,7 @@ Have a great day and year ahead
 
 def testing():
     headers = {
-        'Authorization': 'Bearer key6OhVcVppxONYOe',
+        'Authorization': f'Bearer {airtablekey}',
         # Already added when you pass json= but not when you pass data=
 
     }
@@ -72,7 +72,7 @@ def testing():
 
 def dodaily():
     headers = {
-        'Authorization': 'Bearer key6OhVcVppxONYOe',
+        'Authorization': f'Bearer {airtablekey}',
         # Already added when you pass json= but not when you pass data=
 
     }

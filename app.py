@@ -6,11 +6,10 @@ from logger import logger
 from airtablehandler import *
 from scheduledTask import *
 from cryptography.fernet import Fernet
-
+from setup import *
 #For Encryption
 
-# key = Fernet.generate_key()
-key = "P0mpAZyn3WGpj88GFGewWwmY4OI4JxZyxeJ3-UKUH6A="
+
 crypter = Fernet(key)
 
 # Method for encrypt
@@ -33,16 +32,14 @@ app = Flask(__name__)
 # app.url_map.strict_slashes=False
 # run_with_ngrok(app)
 
-token = "5002606701:AAFt2QcHWaEgqW0T63dXmTIQYglYX2Dw1bM" #testing
+
 
 # token = os.environ.get('token')  #production
 bot=logger(token)
 
 
 #ForTGBot
-def handletgbotquery(text,chat_id,msg_id,query):
-    headers = {'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"}
-    url="http://roryin-newsapi.herokuapp.com/?q="
+
 
 def handlecommands(text,chat_id,msg_id,gid):
     headers = {'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"}
@@ -87,7 +84,7 @@ To know more about bot usage
         return
 
     elif(text[:9]=="/checknow"):
-        if(chat_id == 887572477):
+        if(chat_id == devTGid):
             bot.sendMsgTo(gid,f"Checking for birthdays....",msg_id,"Markdown")
             checkforbirthdays(gid)
             return
@@ -97,7 +94,7 @@ To know more about bot usage
 
 
     elif(text[:8]=="/dodaily"):
-        if(chat_id == 887572477):
+        if(chat_id == devTGid):
             dodaily()
             return
         else:
@@ -108,6 +105,16 @@ To know more about bot usage
         msg = gettoday()
         bot.sendMsgTo(gid,msg,msg_id,"Markdown")
         return
+    elif(text[:3]=="/id"):
+        bot.sendMsgTo(gid,f"gid = {gid} & chatid = {chat_id}",msg_id,"Markdown")
+        return
+        # if(chat_id == 887572477):
+        #     bot.sendMsgTo(gid,f"gid = {gid} & chatid = {chat_id}",msg_id,"Markdown")
+        #     return
+        # else:
+        #     bot.sendMsgTo(gid,"*You are not authorised to use this command*",msg_id,"Markdown")
+        #     return
+
     else:
         bot.sendMsgTo(gid,"Please wait....",msg_id,"Markdown")
         handletgbotquery(text,chat_id,msg_id,text[1:])
@@ -133,7 +140,7 @@ def handlebot():
         try:
             msg=request.get_json()
         except:
-            bot.sendMsgTo(887572477,"Something went wrong in bot while getting updates",55,"Markdown")
+            bot.sendMsgTo(devTGid,"Something went wrong in bot while getting updates",55,"Markdown")
             print("Something went wrong while getting updates")
             return Response("Ok",status=200)
 
@@ -143,7 +150,7 @@ def handlebot():
             text=msg['message']['text']
             message_id=msg['message']['message_id']
         except:
-            # bot.sendMsgTo(887572477,"Something went wrong in bot while parsing json data",55,"Markdown")
+            # bot.sendMsgTo(devTGid,"Something went wrong in bot while parsing json data",55,"Markdown")
             print("Something went wrong while parsing json data")
             return Response("Ok",status=200)
 
@@ -151,7 +158,8 @@ def handlebot():
         try:
             chat_id = msg['message']['from']['id']  #here chat_id is nothing but the from id and gid is chat_id as in json
         except:
-            chat_id = -868119485
+            chat_id = devTGid
+            #Do nothing
 
         if (text[0]=="/"):
                 handlecommands(text,chat_id,message_id,gid)

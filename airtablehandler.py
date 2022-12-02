@@ -1,7 +1,8 @@
+from setup import *
 import requests
 def testit(id,gid):
     headers = {
-        'Authorization': 'Bearer key6OhVcVppxONYOe',
+        'Authorization': f'Bearer {airtablekey}',
         # Already added when you pass json= but not when you pass data=
 
     }
@@ -21,7 +22,7 @@ def updatedata(name,bday,id,gid):
     if(flag==0):
         return 501
     headers = {
-        'Authorization': 'Bearer key6OhVcVppxONYOe',
+        'Authorization': f'Bearer {airtablekey}',
         # Already added when you pass json= but not when you pass data=
         'Content-Type': 'application/json',
     }
