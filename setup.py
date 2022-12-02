@@ -1,10 +1,7 @@
-import os
-
-token = token = os.environ.get('token') #testing/production
-
+token = "5002606701:AAFt2QcHWaEgqW0T63dXmTIQYglYX2Dw1bM" #testing
 # key = Fernet.generate_key()
-key = token = os.environ.get('key')
+key = "P0mpAZyn3WGpj88GFGewWwmY4OI4JxZyxeJ3-UKUH6A="
 
-airtablekey = token = os.environ.get('airtablekey')
+airtablekey = "key6OhVcVppxONYOe"
 
-devTGid = token = os.environ.get('devTGid')
+devTGid = 887572477
