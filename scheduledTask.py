@@ -6,12 +6,14 @@ from app import *
 from logger import logger
 from scheduledTask import *
 from setup import *
+import pytz
 
 # token = os.environ.get('token')  #production
 bot=logger(token)
 
 # To fetch the current date
-currentdate = datetime.datetime.now().strftime("%d-%m")
+dt_today = datetime.datetime.today()
+currentdate = dt_India = dt_today.astimezone(pytz.timezone('Asia/Kolkata')).strftime("%d-%m")
 # print(currentdate)
 
 requrl = f"https://api.airtable.com/v0/{BaseId}/{TableName}/?api_key={airtablekey}"
@@ -19,9 +21,11 @@ headers = {'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KH
 
 
 def gettoday():
-    return (datetime.datetime.now())
+    return(dt_today.astimezone(pytz.timezone('Asia/Kolkata')))
 
 def checkforbirthdays(gid):
+    dt_today = datetime.datetime.today()
+    currentdate = dt_India = dt_today.astimezone(pytz.timezone('Asia/Kolkata')).strftime("%d-%m")
     response = requests.get(requrl,headers).json()
     count=0
     for i in response['records']:
@@ -36,11 +40,9 @@ def checkforbirthdays(gid):
             # Generate wishes and send a POST request to TG
             # print(fetcday)
             messageToSend = f"""Happy Birthday [{i['fields']['Name']}](tg://user?id={i['fields']['id']})
-
 Have a great day and year ahead
             """
             messageToSend2 = f"""Happy Birthday *{i['fields']['Name']}*
-
 Have a great day and year ahead
             """
 
@@ -89,5 +91,5 @@ def dodaily():
     return
 
 if __name__ == '__main__':
-    # dodaily()
-    testing()
+    dodaily()
+    
