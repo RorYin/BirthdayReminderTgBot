@@ -2,25 +2,19 @@
 
 
 ![](https://raw.githubusercontent.com/RorYin/BirthdayReminderTgBot/main/Design.png)
-<p align="center" >
-![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)
 
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+ ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white)![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![Airtable](https://img.shields.io/badge/Airtable-18BFFF?style=for-the-badge&logo=Airtable&logoColor=white)![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) 
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-
-![Airtable](https://img.shields.io/badge/Airtable-18BFFF?style=for-the-badge&logo=Airtable&logoColor=white)
-
-![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white) </p>
-<p align="center">
 ![](https://img.shields.io/github/stars/RorYin/BirthdayReminderTgBot.svg) ![](https://img.shields.io/github/forks/RorYin/BirthdayReminderTgBot.svg) ![](https://img.shields.io/github/tags/RorYin/BirthdayReminderTgBot.svg) ![](https://img.shields.io/github/release/RorYin/BirthdayReminderTgBot.svg) ![](https://img.shields.io/github/issues/RorYin/BirthdayReminderTgBot.svg) 
-</p>
+
 
 
 
 **Table of Contents**
 
 [TOCM]
+
+
 
 # Features
 + Can remind and wish on birthdays in a group and in personal
@@ -33,10 +27,11 @@
 + Deploy on pythonanywhere and set the task for ScheduledTask.py to whatever time u want the bot to check and send update, currently it is set to 12AM for my deployed bot.
 
 #ToDo
-👁️_ To add multiple register from one telegram user, so that one can add his/her friends list to get reminder to him personally rather than in group(if needed so).
-👁️ To add deregister functionality.
-👁️ To add list registered user functionality.
-👁️ And more, as per discussion in the [group](https://telegram.me/+gK3cgGhXuwIzMDJl)._
+
++ To add multiple register from one telegram user, so that one can add his/her friends list to get reminder to him personally rather than in group(if needed so).
++ To add deregister functionality.
++ To add list registered user functionality.
++ And more, as per discussion in the [group](https://telegram.me/+gK3cgGhXuwIzMDJl).
 
 
 
