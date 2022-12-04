@@ -76,7 +76,7 @@ _To know more about bot usage & to deploy ur own_
 
         q = encrypt(chat_id)
         q2 = encrypt(gid)
-        url = f"https://birthdayreminder.up.railway.app/newuser?id={q}&gid={q2}"
+        url = f"{appurl}/newuser?id={q}&gid={q2}"
 
         msg = f"""[Click here to open link and register..!]({url})"""
         bot.sendMsgTo(gid,msg,msg_id,"Markdown")
