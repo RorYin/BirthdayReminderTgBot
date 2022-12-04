@@ -46,11 +46,11 @@ def handlecommands(text,chat_id,msg_id,gid):
     if(text[:6]=="/start"):
         imgurl="https://telegra.ph/file/28d63ceb53d4ab684aa1e.jpg"
         text1="""*Hello, I'm Birthday Reminder Bot,*
-I can remind birthday of your favourite ones,
+_I can remind birthday of your favourite ones,
 Just add the bot to your group and ask everyone to register using bot,
-Bot will collect their birthday info and remind in group on their birthday,
+Bot will collect their birthday info and remind in group on their birthday,_
 
-To know more about bot usage
+_To know more about bot usage_
 [API Source Code](https://github.com/RorYin/BirthdayReminderTgBot)
 [Bot Developped By RorYin](https://github.com/RorYin)
 
@@ -61,11 +61,11 @@ To know more about bot usage
     elif(text[:5]=="/help"):
         imgurl="https://telegra.ph/file/28d63ceb53d4ab684aa1e.jpg"
         txt1="""*Hello, I'm Birthday Reminder Bot*,
-I can remind birthday of your favourite ones,
+_I can remind birthday of your favourite ones,
 Just add the bot to your group and ask everyone to register using bot,
-Bot will collect their birthday info and remind in group on their birthday,
+Bot will collect their birthday info and remind in group on their birthday,_
 
-To know more about bot usage
+_To know more about bot usage_
 [API Source Code](https://github.com/RorYin/BirthdayReminderTgBot)
 [Bot Developped By RorYin](https://github.com/RorYin)
 
