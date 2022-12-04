@@ -67,7 +67,6 @@ Once all are registered, bot will start reminding birthdays of the members in gr
 For bugs report and feature request & discussion:* [Join Here](https://telegram.me/+gK3cgGhXuwIzMDJl)
 _To know more about bot usage & to deploy ur own_
 [Source Code](https://github.com/RorYin/BirthdayReminderTgBot)
-[Bot Developped By RorYin](https://github.com/RorYin)
 
 *Made with ❤️ In India*"""
         bot.sendPhoto(imgurl,txt1,gid,msg_id,"Markdown")
