@@ -10,11 +10,6 @@
 
 
 
-**Table of Contents**
-
-[TOCM]
-
-
 
 # Features
 + Can remind and wish on birthdays in a group and in personal
@@ -23,10 +18,10 @@
 + If interested you can try deploying your own using the open source code
 + currently deployed on pythonanywhere and railway
 
-#Tips
+# Tips
 + Deploy on pythonanywhere and set the task for ScheduledTask.py to whatever time u want the bot to check and send update, currently it is set to 12AM for my deployed bot.
 
-#ToDo
+# ToDo
 
 + To add multiple register from one telegram user, so that one can add his/her friends list to get reminder to him personally rather than in group(if needed so).
 + To add deregister functionality.
@@ -35,11 +30,11 @@
 
 
 
-#ReleaseNote
+# ReleaseNote
 
 > Currently V1.0 bot is deployed on railway, which might soon stop, will deploy to other services, if bot stops workin anytime, you can report the same in [TG group](https://telegram.me/+gK3cgGhXuwIzMDJl).
 
-#Setup
+# Setup
 
 + Fork the repo
 + Edit the Setup.py
@@ -52,14 +47,14 @@
 + Edit your bot description, commands, botpic using BotFather.
 + Done, bot is ready to use, check with "/start" command.
 
-#Airtable Guide
+# Airtable Guide
 > Here is how to your airtable base and table should look like, here "Birthday" is the base name, and "V1Data" is the table name.
 > 
 ![AirtableBase Example](https://raw.githubusercontent.com/RorYin/BirthdayReminderTgBot/main/AirtableBase.png)
 
 <br>
 
-#Deployed Bot Link
+# Deployed Bot Link
 > Here is the Bot link one can readliy use without deploying there own, just add the bot to your group and start using..!
 https://telegram.me/BirthdayReminderV1_bot
 
