@@ -24,6 +24,8 @@ def gettoday():
     return(dt_today.astimezone(pytz.timezone('Asia/Kolkata')))
 
 def checkforbirthdays(gid):
+    requrl = f"https://api.airtable.com/v0/{BaseId}/{TableName}/?api_key={airtablekey}"
+    headers = {'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"}
     dt_today = datetime.datetime.today()
     currentdate = dt_India = dt_today.astimezone(pytz.timezone('Asia/Kolkata')).strftime("%d-%m")
     response = requests.get(requrl,headers).json()
