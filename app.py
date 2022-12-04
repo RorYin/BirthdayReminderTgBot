@@ -116,7 +116,7 @@ _To know more about bot usage & to deploy ur own_
         #     return
 
     else:
-        bot.sendMsgTo(gid,"Please wait....",msg_id,"Markdown")
+        bot.sendMsgTo(gid,"Unknown command",msg_id,"Markdown")
         # handletgbotquery(text,chat_id,msg_id,text[1:])
         return
 
