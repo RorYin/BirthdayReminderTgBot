@@ -1,15 +1,15 @@
-token = "Your Bot TOKEN Here" 
+token = "5851812153:AAFqyJ5lgaxIrWJhC6HDCKIGzXN_ojncgVs" #testing
 # key = Fernet.generate_key()
-key = "Get a key by running above line, and use same here"
+key = "P0mpAZyn3WGpj88GFGewWwmY4OI4JxZyxeJ3-UKUH6A="
 
-airtablekey = "Airtable api key for ur account"
+airtablekey = "key6OhVcVppxONYOe"
 
-devTGid = paste your developer TG id here
+devTGid = 887572477
 
-BaseId = "your airtable Base Id"
+BaseId = "appHXjkKNtDVs9aVm"
 
-TableId = "use your Table Id"
+TableId = "tblXkWAm9VWZ5MdI8"
 
-TableName = "use your TableName"
+TableName = "V1Data"
 
-appurl = "Your webapp url"
+appurl = "https://birthdayreminder.up.railway.app"

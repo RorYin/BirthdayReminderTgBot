@@ -21,6 +21,7 @@ headers = {'User-Agent': "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KH
 
 
 def gettoday():
+    dt_today = datetime.datetime.today()
     return(dt_today.astimezone(pytz.timezone('Asia/Kolkata')))
 
 def checkforbirthdays(gid):
