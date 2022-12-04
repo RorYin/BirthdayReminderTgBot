@@ -44,4 +44,4 @@ def updatedata(name,bday,id,gid):
     print(response.status_code)
     return(response.status_code)
 
-updatedata("name","bday","id","gid")
+# updatedata("name","bday","id","gid")
