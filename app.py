@@ -51,8 +51,7 @@ Just add the bot to your group and ask everyone to register using bot,
 Bot will collect their birthday info and remind in group on their birthday,_
 
 _To know more about bot usage_
-[API Source Code](https://github.com/RorYin/BirthdayReminderTgBot)
-[Bot Developped By RorYin](https://github.com/RorYin)
+/help
 
 *Made with ❤️ In India*"""
         bot.sendPhoto(imgurl,text1,gid,msg_id,"Markdown")
@@ -60,13 +59,14 @@ _To know more about bot usage_
 
     elif(text[:5]=="/help"):
         imgurl="https://telegra.ph/file/28d63ceb53d4ab684aa1e.jpg"
-        txt1="""*Hello, I'm Birthday Reminder Bot*,
-_I can remind birthday of your favourite ones,
-Just add the bot to your group and ask everyone to register using bot,
-Bot will collect their birthday info and remind in group on their birthday,_
+        txt1="""*,_
+Add the bot in ur group,
+Ask every member to register to bot, using /join command,
+Once all are registered, bot will start reminding birthdays of the members in group,
 
-_To know more about bot usage_
-[API Source Code](https://github.com/RorYin/BirthdayReminderTgBot)
+For bugs report and feature request & discussion:_ [Join Here](https://telegram.me/+gK3cgGhXuwIzMDJl)
+_To know more about bot usage & to deploy ur own_
+[Source Code](https://github.com/RorYin/BirthdayReminderTgBot)
 [Bot Developped By RorYin](https://github.com/RorYin)
 
 *Made with ❤️ In India*"""
