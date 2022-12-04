@@ -59,12 +59,12 @@ _To know more about bot usage_
 
     elif(text[:5]=="/help"):
         imgurl="https://telegra.ph/file/28d63ceb53d4ab684aa1e.jpg"
-        txt1="""*,_
-Add the bot in ur group,
+        txt1="""
+*_Add the bot in ur group,
 Ask every member to register to bot, using /join command,
 Once all are registered, bot will start reminding birthdays of the members in group,
 
-For bugs report and feature request & discussion:_ [Join Here](https://telegram.me/+gK3cgGhXuwIzMDJl)
+For bugs report and feature request & discussion:_* [Join Here](https://telegram.me/+gK3cgGhXuwIzMDJl)
 _To know more about bot usage & to deploy ur own_
 [Source Code](https://github.com/RorYin/BirthdayReminderTgBot)
 [Bot Developped By RorYin](https://github.com/RorYin)
