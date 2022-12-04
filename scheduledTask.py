@@ -48,7 +48,7 @@ Have a great day and year ahead
 Have a great day and year ahead
             """
 
-            imgurl="https://pixabay.com/get/g0844b30093d900eea8021b5969c30f4c1d64af32dc20eefa813245698a95a17e5922238468ef8de4073e390aaa7ea2ba_640.jpg"
+            imgurl="https://i.ibb.co/SBZKVkt/Wish2.png"
             resp = bot.sendPhoto(imgurl,messageToSend,i['fields']['gid'],000,"Markdown")
             if(i['fields']['gid'] != i['fields']['id']):
                 resp = bot.sendPhoto(imgurl,messageToSend2,i['fields']['id'],000,"Markdown")
