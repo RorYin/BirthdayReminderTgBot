@@ -1,13 +1,13 @@
-token = "5851812153:AAFqyJ5lgaxIrWJhC6HDCKIGzXN_ojncgVs" #testing
+token = "Your Bot TOKEN Here" 
 # key = Fernet.generate_key()
-key = "P0mpAZyn3WGpj88GFGewWwmY4OI4JxZyxeJ3-UKUH6A="
+key = "Get a key by running above line, and use same here"
 
-airtablekey = "key6OhVcVppxONYOe"
+airtablekey = "Airtable api key for ur account"
 
-devTGid = 887572477
+devTGid = paste your developer TG id here
 
-BaseId = "appHXjkKNtDVs9aVm"
+BaseId = "your airtable Base Id"
 
-TableId = "tblXkWAm9VWZ5MdI8"
+TableId = "use your Table Id"
 
-TableName = "V1Data"
+TableName = "use your TableName"
