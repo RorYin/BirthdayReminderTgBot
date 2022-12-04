@@ -18,23 +18,19 @@
 + If interested you can try deploying your own using the open source code
 + currently deployed on pythonanywhere and railway
 
-# Tips
-+ Deploy on pythonanywhere and set the task for ScheduledTask.py to whatever time u want the bot to check and send update, currently it is set to 12AM for my deployed bot.
+# ReleaseNote
 
-# ToDo
+> Currently V1.0 bot is deployed on railway, which might soon stop, will deploy to other services, if bot stops workin anytime, you can report the same in [TG group](https://telegram.me/+gK3cgGhXuwIzMDJl).
 
+
+# ToDo for next release
 + To add multiple register from one telegram user, so that one can add his/her friends list to get reminder to him personally rather than in group(if needed so).
 + To add deregister functionality.
 + To add list registered user functionality.
 + And more, as per discussion in the [group](https://telegram.me/+gK3cgGhXuwIzMDJl).
 
 
-
-# ReleaseNote
-
-> Currently V1.0 bot is deployed on railway, which might soon stop, will deploy to other services, if bot stops workin anytime, you can report the same in [TG group](https://telegram.me/+gK3cgGhXuwIzMDJl).
-
-# Setup
+# Setup for deploying your own
 
 + Fork the repo
 + Edit the Setup.py
@@ -48,9 +44,14 @@
 + Done, bot is ready to use, check with "/start" command.
 
 # Airtable Guide
+
 > Here is how to your airtable base and table should look like, here "Birthday" is the base name, and "V1Data" is the table name.
 > 
 ![AirtableBase Example](https://raw.githubusercontent.com/RorYin/BirthdayReminderTgBot/main/AirtableBase.png)
+
+# Tips
+
++ Deploy on pythonanywhere and set the task for ScheduledTask.py to whatever time u want the bot to check and send update, currently it is set to 12AM for my deployed bot.
 
 <br>
 
