@@ -47,7 +47,7 @@ def handlecommands(text,chat_id,msg_id,gid):
         imgurl="https://telegra.ph/file/28d63ceb53d4ab684aa1e.jpg"
         text1="""*Hello, I'm Birthday Reminder Bot,*
 I can remind birthday of your favourite ones,
-Just share the bot with the one you need to remember their birthday of,
+Just add the bot to your group and ask everyone to register using bot,
 Bot will collect their birthday info and remind in group on their birthday,
 
 To know more about bot usage
@@ -62,7 +62,7 @@ To know more about bot usage
         imgurl="https://telegra.ph/file/28d63ceb53d4ab684aa1e.jpg"
         txt1="""*Hello, I'm Birthday Reminder Bot*,
 I can remind birthday of your favourite ones,
-Just share the bot with the one you need to remember their birthday of,
+Just add the bot to your group and ask everyone to register using bot,
 Bot will collect their birthday info and remind in group on their birthday,
 
 To know more about bot usage
