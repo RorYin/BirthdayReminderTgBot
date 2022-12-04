@@ -32,7 +32,7 @@
 
 # Setup for deploying your own
 
-+ Fork the repo
++ Fork the repo (better to clone the V1.0 instead of the main branch)
 + Edit the Setup.py
 	+ Create a new TG Bot using BotFather, and copy the bot token and paste it.
 	+ Create a Airtable Base, and a table, with fields as "Name", "Birthday", "id", "gid".
